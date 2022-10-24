@@ -4,7 +4,7 @@ import '../App.css';
 const Welcome = () => {
   return (
     <div className="App" style={{height:"100vh"}}>Welcome
-    {/* <img src="/star.png" className="img-thumbnail" alt="star_pic"/> */}
+    <img src="/star.png" alt="star_pic"/>
     </div>
   )
 }

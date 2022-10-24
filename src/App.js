@@ -45,13 +45,15 @@ function App() {
       <Routes>         
         <Route element={<NoNavBar/>}>
             <Route path="/welcome" element={<Welcome/>}/>  
+            
+            <Route path="*" element={<Welcome/>}/>
         </Route>
         <Route element={<WithNavBar/>}>
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects projects={projects} />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/resume" element={<Resume />} />
-            <Route path="*" element={<Welcome/>}/>
+            
         </Route>
       </Routes>
 

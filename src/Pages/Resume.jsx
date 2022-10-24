@@ -1,32 +1,33 @@
 import React, {useState} from 'react';
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
-// import { pdfjs } from 'react-pdf';
+import '../App.css';
 
 const Resume = () => {
 
-    // pdfjs.GlobalWorkerOptions.workerSrc = 'pdf.worker.min.js';
-
-    const [numPages, setNumPages] = useState(null);
+    // const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
 
-  function onDocumentLoadSuccess({ numPages }) {
-    setNumPages(numPages);
-    setPageNumber(1);
+  function onDocumentLoadSuccess() {
+    // setNumPages(numPages);
+    // setPageNumber(1);
   } 
 
-function changePage(offSet){
-    setPageNumber(prevPageNumber =>prevPageNumber +offSet)}
+  //{ numPages }
 
-function changePageBack(){
-changePage(-1)
-}
+// function changePage(offSet){
+//     setPageNumber(prevPageNumber =>prevPageNumber +offSet)}
 
-function changePageNext(){
-changePage(+1)
-}
+// function changePageBack(){
+// changePage(-1)
+// }
+
+// function changePageNext(){
+// changePage(+1)
+// }
   return (
-    <div className='d-flex flex-column align-items-center'>
-        <p>
+    <div className="App" style={{height:"100vh"}}>
+    <div className='d-flex flex-column align-items-center mt-3'>
+        {/* <p>
         Page {pageNumber} of {numPages}
       </p>
       {pageNumber > 1 && 
@@ -35,11 +36,13 @@ changePage(+1)
       {
       pageNumber < numPages &&
       <button onClick={changePageNext} type="button" class="btn btn-dark">Next Page</button>
-      }
-      <Document file="/Resume S. Sabov.pdf" onLoadSuccess={onDocumentLoadSuccess}>
-        <Page pageNumber={pageNumber} />
+      } */}
+      <Document file="/Resume A. Sabov.pdf" onLoadSuccess={onDocumentLoadSuccess} >
+       <Page pageNumber={pageNumber} className="border border-dark border-4 rounded bg-white"/>
+        
       </Document>
       
+    </div>
     </div>
   )
 }
