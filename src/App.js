@@ -1,10 +1,12 @@
-import { useState } from "react";
-import NavBar from "./components/NavBar";
+
 import { About } from "./Pages/About";
 import { Routes, Route } from "react-router-dom";
 import Projects from "./Pages/Projects";
 import Contact from "./Pages/Contact";
 import Resume from "./Pages/Resume";
+import WithNavBar from "./components/WithNavBar";
+import { NoNavBar } from "./components/NoNavBar";
+import Welcome from "./Pages/Welcome";
 
 const projects = [
   {
@@ -40,14 +42,19 @@ function App() {
 
   return (
     <div>
-      <NavBar />
-      <Routes>
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects projects={projects} />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/resume" element={<Resume />} />
-        <Route path="*" element={<About/> }/>
+      <Routes>         
+        <Route element={<NoNavBar/>}>
+            <Route path="/welcome" element={<Welcome/>}/>  
+        </Route>
+        <Route element={<WithNavBar/>}>
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects projects={projects} />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/resume" element={<Resume />} />
+            <Route path="*" element={<Welcome/>}/>
+        </Route>
       </Routes>
+
     </div>
   );
 }
