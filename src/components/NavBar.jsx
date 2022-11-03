@@ -13,6 +13,11 @@ const NavBar = () => {
   return (
     <NavLinks className="nav justify-content-end display-2 " >
       <li className="nav-item">
+        <Link to="/welcome" className="nav-link active text-dark " >
+          Home 
+        </Link>
+      </li>
+      <li className="nav-item">
         <Link to="/about" className="nav-link active text-dark " >
           About 
         </Link>
