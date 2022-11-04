@@ -27,7 +27,8 @@ const Contact = () => {
     <div className="d-flex p-3">
       <div
         style={{
-          backgroundImage: "url(https://i.imgur.com/DPrakHO.jpg)",
+          backgroundImage: "url(static/myInspiration.jpg)",
+          // https://i.imgur.com/DPrakHO.jpg
           backgroundSize: "cover",
           width: "100vw",
           height: "100vh",

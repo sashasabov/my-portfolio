@@ -37,7 +37,7 @@ const Resume = () => {
       pageNumber < numPages &&
       <button onClick={changePageNext} type="button" class="btn btn-dark">Next Page</button>
       } */}
-      <Document file="/Resume A. Sabov.pdf" onLoadSuccess={onDocumentLoadSuccess} >
+      <Document file="static/Resume A. Sabov.pdf" onLoadSuccess={onDocumentLoadSuccess} >
        <Page pageNumber={pageNumber} className="border border-dark border-4 rounded bg-white"/>
         
       </Document>

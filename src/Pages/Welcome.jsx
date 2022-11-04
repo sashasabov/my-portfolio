@@ -8,7 +8,7 @@ const Welcome = () => {
     <div className="App" style={{ height: "100vh" }}>
       <div className="d-flex justify-content-evenly">
         <div className="col-3 mt-5">
-          <img src="/me.png" alt="pic_of_me" style={{ height: "90vh" }} />{" "}
+          <img src="static/me.png" alt="pic_of_me" style={{ height: "90vh" }} />{" "}
         </div>
         <div className="col-3 mt-3">
           <div className="bubble bubble-bottom-left">
