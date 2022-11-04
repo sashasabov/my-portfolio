@@ -16,11 +16,11 @@ const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-white">
       <div className="container-fluid">
-        {/* <img
+        <img
           src="static/meCoding.png"
           alt="meCoding"
           style={{ height: "10vh", width: "7vw"}}
-        /> */}
+        />
         <button
           class="navbar-toggler"
           type="button"
