@@ -17,6 +17,7 @@ const NavBar = () => {
     <nav className="navbar navbar-expand-lg bg-white">
       <div className="container-fluid">
         <img
+          className="img-fluid" 
           src="static/meCoding.png"
           alt="meCoding"
           style={{ height: "10vh", width: "7vw"}}

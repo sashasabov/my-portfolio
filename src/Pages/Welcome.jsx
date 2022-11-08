@@ -12,11 +12,11 @@ const Welcome = () => {
         </div>
         <div className="col-3 mt-3">
           <div className="bubble bubble-bottom-left">
-            Hi there! I'm Aleksandra. Welcome to my Portfolio! I hope you enjoy
+            Hi there! I'm Aleksandra. Welcome to my Portfolio! Here I'm sharing with you my true passion - Web Development! I hope you enjoy
             getting to know me :)
           </div>
         </div>
-        {/* <div className="col mt-3"> */}
+
         <div className="col-3 d-flex flex-column justify-content-evenly m-5" style={{ fontSize:"7vh"}}>
           <div style={{border:"3px solid black", backgroundColor:"white", borderRadius:"10px", }}><Link to={"/about"}  style={{textDecoration:"none", color:"black"}}>About</Link></div>
           <div style={{border:"3px solid black", backgroundColor:"white", borderRadius:"10px", }}><Link to={"/projects"}  style={{textDecoration:"none", color:"black"}}>Projects</Link></div>
@@ -24,7 +24,7 @@ const Welcome = () => {
           <div style={{border:"3px solid black", backgroundColor:"white", borderRadius:"10px", }}><Link to={"/resume"}  style={{textDecoration:"none", color:"black"}}>Resume</Link></div>
           
           </div>
-        {/* </div> */}
+
       </div>
     </div>
   );
