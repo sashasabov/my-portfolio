@@ -46,16 +46,16 @@ export const About = () => {
           </div>
         </div>
 
-        <div className="card border border-dark border-3 rounded-4" style={{ width: "25rem", height: "auto", rotate:"-5deg" }}>
+        {/* <div className="card border border-dark border-3 rounded-4" style={{ width: "25rem", height: "auto", rotate:"-5deg" }}>
           <div className="card-body">
             <h5 className="card-title">Getting into tech...</h5>
             <p className="card-text">
             Becoming a Software Engineer allowed me to tackle new obstacles and create cutting-edge solutions in a tech-powered world - from debugging system errors with Javascript to creating algorithms using React to infer information. As technology rapidly penetrates every aspect of our lives, I am excited to leverage my analytical nature and inquisitive mindset to create low-cost solutions and technological resources that are accessible and improve the lives of all communities.
             </p>
           </div>
-        </div>
+        </div> */}
 
-        <div className="card border border-dark border-3 rounded-4" style={{ width: "25rem", height: "auto", rotate:"15deg" }}>
+        <div className="card border border-dark border-3 rounded-4" style={{ width: "25rem", height: "auto", rotate:"-10deg" }}>
           <div className="card-body">
             <h5 className="card-title">Off coding...</h5>
             <p className="card-text">
