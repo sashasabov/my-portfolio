@@ -12,7 +12,7 @@ const Welcome = () => {
         </div>
         <div className="col-3 mt-3">
           <div className="bubble bubble-bottom-left">
-            Hi there! Welcome to my Portfolio! I'm Aleksandra, Software Engineer with background in math. Here I'm sharing with you my true passion - Web Development! I hope you enjoy
+            Hi there! Welcome to my Portfolio! I'm Aleksandra/Sasha, Software Engineer with background in math. Here I'm sharing with you my true passion - Web Development! I hope you enjoy
             getting to know me :)
           </div>
         </div>
