@@ -7,6 +7,7 @@ import Resume from "./Pages/Resume";
 import WithNavBar from "./components/WithNavBar";
 import { NoNavBar } from "./components/NoNavBar";
 import Welcome from "./Pages/Welcome";
+import "./App.css"
 
 const projects = [
   {

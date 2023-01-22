@@ -6,9 +6,7 @@ export const About = () => {
   return (
     // <div  className="App" >
 
-    <div className="container-fluid p-3" style={{backgroundImage:`url("https://popmenucloud.com/smgxvkoz/4079d573-02f3-4f4b-9af2-53b140e96a1b.jpeg")`,borderTop: "1rem solid black",backgroundSize: "cover",
-    width: "100vw",
-    height: "100vh",}}>
+    <div className="container-fluid p-3 vh-100" style={{backgroundImage:`url("https://popmenucloud.com/smgxvkoz/4079d573-02f3-4f4b-9af2-53b140e96a1b.jpeg")`,borderTop: "1rem solid black",backgroundSize: "cover"}}>
 
       <div className="row" >
       <div className="col-3 mt-5">
