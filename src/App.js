@@ -22,7 +22,7 @@ const projects = [
   {
     name: "WeGame",
     url: "https://i.imgur.com/etUHhVV.png",
-    link:"https://wegame-project2.herokuapp.com/",
+    link:"https://we-game-library.onrender.com/",
     description:
       "Library of games for any kind of events: outdoor, indoor, adults, kids parties. Users can sort games by category, leave a review/suggestion on the game, upload/delete their own game.",
     techDetails:
@@ -31,7 +31,7 @@ const projects = [
   {
     name: "Budget-Tallie",
     url: "https://i.imgur.com/w7Ri4ap.png",
-    link:"http://budget-tallie-frontend.herokuapp.com/",
+    link:"https://budget-tallie-ui.vercel.app/",
     description:
       "Budget tracker for everyday use, shows balance of all expenses. Allows users to customize expense category by adding new one or editing/deleting existing ones. Tracks all of the expenses on report with dates recorded",
     techDetails:
@@ -53,8 +53,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects projects={projects} />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/resume" element={<Resume />} />
-            
+            <Route path="/resume" element={<Resume />} />        
         </Route>
       </Routes>
 

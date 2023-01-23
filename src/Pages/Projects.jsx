@@ -4,14 +4,21 @@ import Project from "../components/Project";
 
 
 const Projects = ({projects}) => {
+
+  
   return (
-    <div className="App">
-        <div className="d-flex justify-content-evenly align-items-center">
-            <div className="hstack gap-5 mt-5">
-   {projects.map(project => <Project project={project} key={project.name}/>)}
-   </div>
-   </div>
+    <div className="App" >
+{/* <div  className="App"> */}
+    <div className="container vh-100">
+        <div className="d-flex justify-content-center mt-3" >
+            <div className="hstack gap-5 align-items-center">
+            {projects.map(project => <Project project={project} key={project.name}/>)}
+            </div>
+          </div>
     </div>
+    </div>
+
+
   );
 };
 

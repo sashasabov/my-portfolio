@@ -16,7 +16,7 @@ const Welcome = () => {
           <img src="static/me.png" className="img-fluid"  alt="pic_of_me" style={{height:"80vh"}}/>
         </div>
 
-        <div className="col-3 p-2 flex-shrink-1 mt-4 vw-25" style={{height:"40vh"}}>        
+        <div className="col-3 p-2 mt-4 vw-25" style={{height:"40vh"}}>        
             <div className="bubble bubble-bottom-left" >
               <p className="text-wrap" ref={ref} style={{ fontSize, height: "100%", width: "auto" }} >
                 Hi there! Welcome to my Portfolio! I'm Aleksandra/Sasha, Software Engineer with background in math. Here I'm sharing with you my true passion - Web Development! I hope you enjoy

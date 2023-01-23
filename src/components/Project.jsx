@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import useFitText from "use-fit-text";
 
 const ProjName = styled.div`
   p:hover{
@@ -9,12 +10,17 @@ const ProjName = styled.div`
 `
 
 const Project = ({ project }) => {
+
+  const {fontSize, ref} = useFitText();
+
   return (
+
     <div
       className="card border border-dark border-4 rounded-4"
-      style={{ width: "18rem", backgroundColor: "FFFCF2" }}
+      style={{ width: "25vw", backgroundColor: "FFFCF2"}}
     >
-      <img src={project.url} className="card-img-top" alt={project.name} />
+      <div className="container" >
+      <img src={project.url} className="card-img-top mt-2" alt={project.name} />
       <ProjName
         className="card-body "
         data-bs-toggle="collapse"
@@ -25,16 +31,18 @@ const Project = ({ project }) => {
         <p className="card-text fs-2"> {project.name}</p>
       </ProjName>
 
-      <div className="collapse" id={project.name}>
-        <div className="card card-body">
-          <h5>Description:</h5>
-          <p> {project.description}</p>
-          <h5>TechDetails:</h5>
-          <p>{project.techDetails}</p>
-          <h5>Link:</h5>
-          <a href={project.link}>{project.name}</a>
+      <div className="collapse" id={project.name} style={{height:"50vh"}}>
+        <div className="card card-body" style={{height:"40vh"}} >  
+        <p ref={ref} style={{ fontSize, height: "100%", width: "auto"}}>        
+          <h5 >Description:</h5>
+          <p > {project.description}</p>
+          <h5 >TechDetails:</h5>
+          <p >{project.techDetails}</p>   
+          <h5> Link: <a href={project.link}>{project.name} </a> </h5> 
+        </p>       
         </div>
       </div>
+    </div>
     </div>
   );
 };

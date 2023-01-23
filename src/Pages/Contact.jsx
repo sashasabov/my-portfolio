@@ -24,7 +24,7 @@ const Links = styled.ul`
 
 const Contact = () => {
   return (
-    <div className="d-flex p-3">
+    <div className="d-flex p-1">
       <div
         style={{
           backgroundImage: "url(static/myInspiration.jpg)",
@@ -34,7 +34,7 @@ const Contact = () => {
           height: "100vh",
         }}
       >
-        <Links className="list-inline fs-3 d-flex justify-content-evenly mt-">
+        <Links className="list-inline fs-3 d-flex justify-content-evenly mt-2">
           <li className="list-inline-item "><a href="mailto: sashaharmer@yahoo.com" >Email</a></li>
           <li className="list-inline-item"><a href="https://www.linkedin.com/in/aleksandra-sabov/" > Linked <div id="in" >in</div></a></li>
           <li className="list-inline-item"><a href="https://github.com/sashasabov"> GitHub</a></li>
