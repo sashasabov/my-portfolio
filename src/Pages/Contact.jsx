@@ -24,13 +24,14 @@ const Links = styled.ul`
 
 const Contact = () => {
   return (
-    <div className="d-flex p-1">
+    // <div className="d-flex p-1">
       <div
+      className="bg-image"
         style={{
           backgroundImage: "url(static/myInspiration.jpg)",
-          // https://i.imgur.com/DPrakHO.jpg
           backgroundSize: "cover",
-          width: "100vw",
+          backgroundPosition: "center center",
+          // width: "auto",
           height: "100vh",
         }}
       >
@@ -41,7 +42,7 @@ const Contact = () => {
           <li className="list-inline-item" ><Link to="/resume">Resume</Link></li>
         </Links>
       </div>
-    </div>
+    // </div>
   );
 };
 
