@@ -8,7 +8,7 @@ const Welcome = () => {
 
   return (
     <div className="App">
-      <div className="d-flex justify-content-evenly vh-100" style={{border:"2px solid red"}}>            
+      <div className="d-flex justify-content-evenly vh-100">            
         <div className="col-6 mt-3">
             <div className="d-flex align-items-center justify-content-end vh-100 mx-5">
               <img src="static/me.png" className="img-fluid"  alt="pic_of_me" style={{height:"80vh"}}/>
