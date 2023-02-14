@@ -28,17 +28,17 @@ const Project = ({ project }) => {
         aria-expanded="false"
         aria-controls={project.name}
       >
-        <p className="card-text fs-2"> {project.name}</p>
+        <h1 className="card-title" style={{fontSize:"1.5em"}}> {project.name}</h1>
       </ProjName>
 
       <div className="collapse" id={project.name} style={{height:"50vh"}}>
-        <div className="card card-body" style={{height:"40vh"}} >  
+        <div className="card card-body" style={{height:"40vh"}}>  
         <p ref={ref} style={{ fontSize, height: "100%", width: "auto"}}>        
           <h5 >Description:</h5>
           <p > {project.description}</p>
           <h5 >TechDetails:</h5>
           <p >{project.techDetails}</p>   
-          <h5> Link: <a href={project.link}>{project.name} </a> </h5> 
+          <h5> Link: <a  href={project.link}>{project.name} </a> </h5> 
         </p>       
         </div>
       </div>
