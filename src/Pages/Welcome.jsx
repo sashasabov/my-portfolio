@@ -22,9 +22,10 @@ const Welcome = () => {
                 sequence={[
                   `Hi there! Welcome to my Portfolio! I'm Aleksandra/Sasha, Software Engineer with background in math. Here I'm sharing with you my true passion - Web Development! I hope you enjoy getting to know me...`
                 ]}
+                wrapper="div"
                 cursor={false}
                 repeat={1}  
-                style={{ fontSize:"2.2vh"}}                                 
+                style={{fontSize:"2.2vh"}}                                 
                   />
               </div>
             </div> 
