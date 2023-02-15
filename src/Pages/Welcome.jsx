@@ -33,7 +33,7 @@ const Welcome = () => {
         <div className="d-flex flex-column justify-content-evenly align-items-center mb-5" >
           <Link to={"/about"} ><img id="nav"src="static/about.png" alt="about" /></Link>
           <Link to={"/projects"} ><img id="nav"src="static/projects.png" alt="projects" /></Link>                  
-          <Link to={"/contact"} ><img id="nav" src="static/contact.png" alt="contact" /></Link>                   
+          <Link to={"/contact"} ><img id="nav" src="static/contactInfo.png" alt="My Contact Info" /></Link>                   
           <Link to={"/resume"} ><img id="nav"src="static/resume.png" alt="resume" /></Link>         
         </div>
       </div>
